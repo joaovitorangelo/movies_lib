@@ -1,3 +1,7 @@
+# Film library
+
+# About
+
 The objective of this project is to improve my knowledge in React.js and use the API to display a "library" of films.
 
 It must contain the following functionalities:
