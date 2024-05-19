@@ -4,14 +4,27 @@ import db from "../db"; // Importe seus dados aqui
 import "./Downloads.css"
 
 import { FaGoogleDrive } from "react-icons/fa";
+import { FaEye } from "react-icons/fa6";
+import { FaEyeSlash } from "react-icons/fa6";
+
+
 
 const Downloads = () => {
   const [movies, setMovies] = useState([]);
+  const [expandedIndex, setExpandedIndex] = useState(null);
 
-  // Simule um efeito de montagem para carregar os dados
   useEffect(() => {
-    setMovies(db); // Define os dados iniciais
+    setMovies(db); 
   }, []);
+
+  
+  const toggleSynopsis = (index) => {
+    if (expandedIndex === index) {
+      setExpandedIndex(null);
+    } else {
+      setExpandedIndex(index);
+    }
+  };
 
   return (
     <div className="download-container">
@@ -21,7 +34,13 @@ const Downloads = () => {
             <img src={movie.image} alt={movie.title} />
             <div className="info">
               <h2>{movie.title}</h2>
-              <p>{movie.description}</p>
+              <button className="expanded" onClick={() => toggleSynopsis(index)}>
+                {expandedIndex === index ? "Fechar sinopse" : "Ver sinopse" }
+                {expandedIndex === index ? <span className="eyes"><FaEyeSlash /></span> : <span className="eyes"><FaEye /></span> }
+              </button>
+              <p className={`synopsis ${expandedIndex === index ? "active" : ""}`}>
+                {movie.description}
+              </p>
               {movie.drive_link.includes("drive.google.com") ? (
                 <iframe
                   src={movie.drive_link.replace("/view?usp=drive_link", "/preview")}

@@ -37,6 +37,23 @@ iframe {
   line-height: 1.5em;
 }
 .drive-icon { margin-left: 10px; }
+.synopsis {
+  overflow: hidden;
+  max-height: 0;
+  transition: .5s ease-in-out;
+}
+.active {
+  max-height: 100px;
+}
+.expanded {
+  cursor: pointer;
+  color: #f7d354;
+  text-align: start;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.eyes { margin-left: 10px; }
 @media (max-width: 768px) {
   .download-container {
     display: initial;
@@ -62,7 +79,7 @@ iframe {
   .drive-icon {
     position: relative;
     right: 135px;
-    bottom: 220px;
+    bottom: 230px;
     font-size: 30px;
   }
   .movie-container {

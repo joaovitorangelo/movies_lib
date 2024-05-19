@@ -46,6 +46,11 @@
     width: 500px;
 }
 @media (max-width: 768px) {
+    .navigation h2 { font-size: 45px; }
+    #navbar { 
+        height: 20vh; 
+        flex-direction: column; 
+    }
     #navbar span { display: none; }
-    .navigation { width: 70px; }
+    .navigation { width: 100%; }
 }
