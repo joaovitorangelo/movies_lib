@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { BiSearchAlt2 } from "react-icons/bi"
 import { GiBee } from "react-icons/gi"
+import { HiFolderDownload } from "react-icons/hi";
 
 import "./Navbar.css"
 
@@ -21,12 +22,18 @@ const Navbar = () => {
 
     return (
         <nav id="navbar">
-            <h2>
-                <Link to="/">
-                    <GiBee /> <span>BeeMoovies</span>
-                </Link>
-            </h2>
-
+            <div className="navigation">
+                <h2>
+                    <Link to="/">
+                        <GiBee /> <span>BeeMoovies</span>
+                    </Link>
+                </h2>
+                <h2>
+                    <Link to="downloads">
+                        <HiFolderDownload /> <span>Ver meus filmes</span>
+                    </Link>
+                </h2>
+            </div>
             <form onSubmit={handleSubmit}>
                 <input 
                 type="text" 

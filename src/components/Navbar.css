@@ -39,10 +39,13 @@
     background-color: transparent;
     color: #f7d354;
 }
-
-@media (max-width: 768px) {
-    #navbar span {
-       display: none;
-    }
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
 }
-
+@media (max-width: 768px) {
+    #navbar span { display: none; }
+    .navigation { width: 70px; }
+}
