@@ -1,0 +1,21 @@
+.raffle-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    font-size: 0.8em;
+}
+.raffle-container button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px !important;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+.circle { font-size: 30px; }
+body.no-movies { height: 100vh; }
+  

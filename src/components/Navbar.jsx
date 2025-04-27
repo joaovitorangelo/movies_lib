@@ -4,6 +4,7 @@ import { BiSearchAlt2 } from "react-icons/bi"
 import { GiBee } from "react-icons/gi"
 import { HiFolderDownload } from "react-icons/hi";
 import { CiLogin } from "react-icons/ci";
+import { BiSolidCameraMovie } from "react-icons/bi";
 
 import "./Navbar.css"
 
@@ -37,6 +38,11 @@ const Navbar = () => {
                 <h2>
                     <Link to="login">
                         <CiLogin /> <span>Acesso</span>
+                    </Link>
+                </h2>
+                <h2>
+                    <Link to="sortear-filmes">
+                        <BiSolidCameraMovie /> <span>Sortear</span>
                     </Link>
                 </h2>
             </div>

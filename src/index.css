@@ -8,6 +8,7 @@
 body {
   background-image: linear-gradient( 135deg, #06051f 10%, #1f051f 100%);
   color: #fff;
+  height: 100%;
 }
 
 a {

@@ -9,6 +9,7 @@ import Movie from "./pages/Movie.jsx"
 import Search from "./pages/Search.jsx"
 import UploadMovie from "./pages/UploadMovie.jsx"
 import Login from "./components/Login.jsx"
+import RaffeMovies from "./pages/RaffleMovies.jsx"
 
 import "./index.css"
 
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="uploadmovie" element={<UploadMovie />} />
           <Route path="login" element={<Login />} />
           <Route path="search" element={<Search />} />
+          <Route path="sortear-filmes" element={<RaffeMovies />} />
         </Route>
       </Routes>
     </BrowserRouter>

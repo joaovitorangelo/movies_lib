@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom"
 import Navbar from "./components/Navbar"
-import Ad from "./components/Ad"
+// import Ad from "./components/Ad"
 // import Login from "./components/Login"
 
 import "./App.css"
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Navbar />
       {/* <Login /> */}
-      <Ad />
+      {/* <Ad /> */}
       <Outlet />
     </div>
   )
