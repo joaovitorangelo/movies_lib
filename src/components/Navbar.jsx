@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { BiSearchAlt2 } from "react-icons/bi"
 import { GiBee } from "react-icons/gi"
 import { HiFolderDownload } from "react-icons/hi";
+import { CiLogin } from "react-icons/ci";
 
 import "./Navbar.css"
 
@@ -28,9 +29,14 @@ const Navbar = () => {
                         <GiBee /> <span>BeeMoovies</span>
                     </Link>
                 </h2>
+                <h2 className="up">
+                    <Link to="uploadmovie">
+                        <HiFolderDownload /> <span>Upload</span>
+                    </Link>
+                </h2>
                 <h2>
-                    <Link to="downloads">
-                        <HiFolderDownload /> <span>Ver meus filmes</span>
+                    <Link to="login">
+                        <CiLogin /> <span>Acesso</span>
                     </Link>
                 </h2>
             </div>

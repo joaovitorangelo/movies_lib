@@ -1,0 +1,71 @@
+.form-upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95dvh;
+  }
+  .form-upload-container form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 20px;
+  }
+  .form-upload-container input { cursor: auto !important; }
+  .form-upload-container button,
+  .upload-label,
+  .form-upload-container input {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px !important;
+    cursor: pointer;
+    border: 1px solid #fff;
+    text-align: center;
+  }
+  .upload-input { display: none; }
+  .loading {
+    position: absolute; /* Permite o uso de transform */
+    top: 50%;          /* Coloca no meio verticalmente */
+    left: 50%;         /* Coloca no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    background-image: linear-gradient(135deg, #06051f 10%, #1f051f 100%);
+    padding: 20px;
+    border-radius: 10px;
+    animation: uploading 1s forwards; /* Duração e repetição da animação */
+    z-index: 999;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .loading-active {
+    filter: blur(3px);
+  }
+  .circle {
+    animation: rotate 2s linear infinite;
+  }
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  @keyframes uploading {
+    0% {
+      transform: translate(-50%, -500px); /* Posição inicial */
+    }
+    100% {
+      transform: translate(-50%, calc(-50% + 50%)); /* Move para 50% para baixo */
+    }
+  }
+  @media screen and ( max-width: 768px ) {
+    .loading-active {
+      display: none;
+    }
+  }
+  

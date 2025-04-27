@@ -50,12 +50,20 @@
     gap: .5rem;
 }
 
-.description {
-    padding-bottom: 10rem;
-}
-
 .description p {
     line-height: 1.4rem;
+}
+
+.movie video {
+    border-radius: 10px;
+}
+
+.cloud-icon {
+    font-size: 42px !important;
+    margin-bottom: -60px;
+    z-index: 999;
+    margin-left: 10px;
+    position: absolute;
 }
 
 @media (max-width: 768px) {

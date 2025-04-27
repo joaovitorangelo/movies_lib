@@ -24,7 +24,15 @@ const Home = () => {
 
     }, [])
 
-    return(
+    // useEffect(() => {
+    //     if (loading) {
+    //       containerRef.current.classList.add('loading-active');
+    //     } else {
+    //       containerRef.current.classList.remove('loading-active');
+    //     }
+    //   }, [loading]);
+
+    return (
         <div className="container">
             <h2 className="title">Best movies: </h2>
             <div className="movies-container">
