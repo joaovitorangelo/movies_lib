@@ -36,13 +36,13 @@ const Navbar = () => {
                     </Link>
                 </h2>
                 <h2>
-                    <Link to="login">
-                        <CiLogin /> <span>Acesso</span>
+                    <Link to="sortear-filmes">
+                        <BiSolidCameraMovie /> <span>Sortear</span>
                     </Link>
                 </h2>
                 <h2>
-                    <Link to="sortear-filmes">
-                        <BiSolidCameraMovie /> <span>Sortear</span>
+                    <Link to="login">
+                        <CiLogin /> <span>Acesso</span>
                     </Link>
                 </h2>
             </div>
